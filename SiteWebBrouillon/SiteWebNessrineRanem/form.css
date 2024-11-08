@@ -1,0 +1,108 @@
+/* Style de base pour le formulaire */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour les labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Champs de texte, email, mot de passe, textarea, select */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+    /* Champs en focus */
+    input:focus,
+    textarea:focus,
+    select:focus {
+        border-color: #3498db;
+        box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    }
+
+/* Styles pour les boutons */
+button,
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    button:hover,
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+/* Styles pour les cases à cocher et boutons radio */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Style spécifique pour le formulaire de contact */
+#contact-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    #contact-form h1 {
+        color: #1abc9c;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #contact-form .form-group label {
+        font-weight: bold;
+        color: #333;
+    }
+
+    #contact-form .form-control {
+        border: 1px solid #bdc3c7;
+        border-radius: 5px;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        #contact-form .form-control:focus {
+            border-color: #3498db;
+            box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+        }
+
+    /* Bouton envoyer spécifique au formulaire de contact */
+    #contact-form .btn-send {
+        background-color: #1abc9c;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+        #contact-form .btn-send:hover {
+            background-color: #16a085;
+        }

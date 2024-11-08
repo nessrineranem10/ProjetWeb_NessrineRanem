@@ -1,0 +1,17 @@
+#container {
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 10%; /* Espace supérieur pour le cadre */
+    margin-bottom: 20px; /* Ajout d'un espace en bas pour ne pas être collé au pied de page */
+    padding: 20px; /* Ajout d'un rembourrage pour l'intérieur du cadre */
+    background-color: white; /* Fond blanc pour le cadre */
+    border: 1px solid #ccc; /* Bordure gris clair autour du cadre */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre pour donner un effet de profondeur */
+    border-radius: 8px; /* Coins arrondis pour un look moderne */
+}
+
+    #container h1 {
+        width: 100%; /* Ajustement de la largeur */
+        margin: 10%;
+        text-align: center; /* Centrage du titre */
+    }
