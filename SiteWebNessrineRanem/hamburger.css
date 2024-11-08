@@ -1,0 +1,45 @@
+/* Menu.css */
+
+/* Bouton hamburger - caché en grand écran */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Style par défaut du menu pour les écrans plus larges */
+.menu {
+    display: flex;
+}
+
+/* Media query pour les écrans de moins de 768px */
+@media (max-width: 768px) {
+    /* Bouton hamburger visible sur mobile */
+    .hamburger {
+        display: block;
+    }
+
+    /* Masque le menu par défaut sur mobile */
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        background-color: #1abc9c;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    /* Affiche le menu quand `.show` est activé */
+    .menu.show {
+        display: flex;
+    }
+
+    /* Style des items du menu pour mobile */
+    .menu li {
+        padding: 10px;
+        border-bottom: 1px solid #ecf0f1;
+    }
+}

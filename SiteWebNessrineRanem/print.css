@@ -1,0 +1,42 @@
+.header,
+.menu,
+nav,
+footer,
+form {
+    display: none !important
+}
+
+body {
+    margin: 0;
+    padding: 1cm;
+    font-size: 12pt;
+    line-height: 1.4
+}
+
+#panier {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+h2,
+h3,
+p {
+    color: #000
+}
+
+button,
+.actions {
+    display: none
+}
+
+.total {
+    font-weight: bold;
+    font-size: 14pt;
+    margin-top: 10px
+}

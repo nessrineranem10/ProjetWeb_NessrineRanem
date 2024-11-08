@@ -1,0 +1,103 @@
+.slider {
+    position: relative;
+    max-width: 300px;
+    height: 250px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #f0f0f0
+}
+
+.slides {
+    display: flex;
+    transition: transform .5s ease
+}
+
+.slides img {
+    width: 300px;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 10px;
+    background-color: #fff;
+    transform: scale(1)
+}
+
+.product {
+    margin: 10px;
+    flex: 1;
+    min-width: 250px
+}
+
+.product form input[type="button"] {
+    background-color: #28a745;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color .3s ease, transform .3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2)
+}
+
+.product form input[type="button"]:hover {
+    background-color: #218838;
+    transform: scale(1.05)
+}
+
+a {
+    text-decoration: none
+}
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 8px
+}
+
+.quantity {
+    width: 80px;
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    -moz-appearance: textfield
+}
+
+.quantity:focus {
+    border-color: #28a745;
+    outline: none
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
